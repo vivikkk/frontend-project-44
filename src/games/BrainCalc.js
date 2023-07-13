@@ -16,7 +16,7 @@ export default class BrainCalc extends BrainGames {
   }
 
   game() {
-    this.CURRENT_OPERATOR = this.OPERATORS[getRandomInt(this.OPERATORS.length)];
+    this.CURRENT_OPERATOR = this.OPERATORS[getRandomInt(this.OPERATORS.length - 1)];
     this.FIRST_NUM = getRandomInt(this.MAX_RANDOM_VALUE);
     this.SECOND_NUM = getRandomInt(this.MAX_RANDOM_VALUE);
 
