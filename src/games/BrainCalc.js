@@ -9,6 +9,7 @@ export default class BrainCalc extends BrainGames {
 
     this.DESCRIPTION = 'What is the result of the expression?';
     this.OPERATORS = ['-', '+'];
+
     this.CURRENT_OPERATOR = null;
     this.FIRST_NUM = null;
     this.SECOND_NUM = null;
