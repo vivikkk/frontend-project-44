@@ -6,4 +6,7 @@
 # Demo of games
 
 ## Brain-even
-<a href="https://asciinema.org/a/VH4A56ZgM0vVnvthhgJOl6LgQ" target="_blank"><img src="https://asciinema.org/a/VH4A56ZgM0vVnvthhgJOl6LgQ.svg" /></a>
+[![asciicast](https://asciinema.org/a/Jma7IXWbqTZPJzZBeeZudBcl6.svg)](https://asciinema.org/a/Jma7IXWbqTZPJzZBeeZudBcl6)
+
+## Brain-calc
+[![asciicast](https://asciinema.org/a/76aouU5u7ZlQALfjIy0fEcwLb.svg)](https://asciinema.org/a/76aouU5u7ZlQALfjIy0fEcwLb)
