@@ -7,6 +7,7 @@ export default class BrainPrime extends BrainGames {
   constructor(...args) {
     super(...args);
 
+    this.ATTEMPTS_COUNT = 1;
     this.YES_PHRASE = 'yes';
     this.NO_PHRASE = 'no';
     this.DESCRIPTION = `"${this.YES_PHRASE}" if given number is prime. Otherwise answer "${this.NO_PHRASE}".`;
