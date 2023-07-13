@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
 import BrainGames from '../index.js';
-import getRandomInt from '../utils/getRandomInt.js';
+import { getRandomInt, isEven } from '../utils/index.js';
 
 export default class BrainEven extends BrainGames {
   constructor(...args) {
@@ -12,15 +12,11 @@ export default class BrainEven extends BrainGames {
     this.DESCRIPTION = `Answer "${this.YES_PHRASE}" if the number is even, otherwise answer "${this.NO_PHRASE}".`;
   }
 
-  get isEven() {
-    return this.currentValue % 2 === 0;
-  }
-
   game() {
     this.currentValue = getRandomInt(this.MAX_RANDOM_VALUE);
     console.log(`${this.QUESTION_PHRASE}: ${this.currentValue}`);
     this.currentAnswer = readlineSync.question(`${this.YOUR_ANSWER_PHRASE}: `);
-    this.correctAnswer = this.isEven
+    this.correctAnswer = isEven(this.currentValue)
       ? this.YES_PHRASE
       : this.NO_PHRASE;
   }
